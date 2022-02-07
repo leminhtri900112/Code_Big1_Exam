@@ -373,6 +373,123 @@
           </div>
         </div>
       </section>
+      <div class="diner__middle py-5">
+        <div class="container pt-lg-2 pb-lg-4 py-4">
+          <div class="middle__content text-center py-lg-5">
+            <h3 class="px-lg-5">Deliciousness jumping into the mouth.</h3>
+            <div class="middle__buttons pb-lg-5">
+              <a
+                href="#"
+                class="btn btn-style btn-white mt-sm-5 mt-4 mr-lg-4 mr-2"
+                >Read More
+                <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span
+              ></a>
+              <a href="#" class="btn btn-style btn-primary mt-sm-5 mt-4"
+                >Contact Us
+                <span class="fa fa-chevron-right ml-2" aria-hidden="true"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="diner__stats py-lg-0 py-md-5 py-4">
+        <div class="container">
+          <div class="stats__container">
+            <div class="row">
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="stat__item">
+                  <span class="fa fa-building"></span>
+                  <div
+                    class="timer count-title count-number mt-3"
+                    data-to="15100"
+                    data-speed="1500"
+                  >
+                    15,100
+                  </div>
+                  <p class="stat__text">Branches</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="stat__item">
+                  <span class="fa fa-cutlery"></span>
+                  <div
+                    class="timer count-title count-number mt-3"
+                    data-to="19256"
+                    data-speed="1500"
+                  >
+                    19,256
+                  </div>
+                  <p class="stat__text">Food Items</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="stat__item">
+                  <span class="fa fa-users"></span>
+                  <div
+                    class="timer count-title count-number mt-3"
+                    data-to="12100"
+                    data-speed="1500"
+                  >
+                    12,100
+                  </div>
+                  <p class="stat__text">Chefs</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 mt-md-0 mt-4">
+                <div class="stat__item">
+                  <span class="fa fa-smile"></span>
+                  <div
+                    class="timer count-title count-number mt-3"
+                    data-to="2560"
+                    data-speed="1500"
+                  >
+                    2,560
+                  </div>
+                  <p class="stat__text">Happy Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="diner__video">
+        <div class="video__block py-5">
+          <div class="container py-lg-5">
+            <div class="video__history-info">
+              <!--//video-->
+              <a
+                href="#small-dialog"
+                class="popup-with-zoom-anim play-view text-center pl-3"
+              >
+                <span class="video-play-icon">
+                  <span class="fa fa-play"></span>
+                </span>
+              </a>
+
+              <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+              <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                <iframe
+                  src="https://player.vimeo.com/video/305185528"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+              <!--//video-->
+            </div>
+
+            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+              <iframe
+                src="https://player.vimeo.com/video/305185528"
+                frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen=""
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -391,5 +508,46 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <!-- counter -->
+    <script src="./js/counter.js"></script>
+
+    <!-- popup -->
+    <script src="./js/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+
+        $(".popup-with-move-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-slide-bottom",
+        });
+      });
+    </script>
   </body>
 </html>
