@@ -229,3 +229,65 @@ button#trigger-overlay {
   line-height: 70px;
 }
 /* end book */
+
+/* start category */
+.diner__category .category__item-img {
+  position: relative;
+}
+
+.diner__category .category__item-img:after {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  content: " ";
+  position: absolute;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0.53) 69%,
+    rgba(0, 0, 0, 0.76) 100%
+  );
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.diner__category .category__item-img img {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  border-radius: var(--border-radius);
+}
+
+.diner__category img:hover {
+  opacity: 0.85;
+  transition: all 0.4s;
+}
+
+.diner__category .category__item-info {
+  left: auto;
+  bottom: 0;
+  width: 95%;
+  padding: 0 10px;
+  position: absolute;
+  color: #fff;
+  transform: translate3d(0, 10%, 0);
+}
+
+.diner__category .category__item a h4 {
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.diner__category .category__item-info span {
+  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+/* end category */
