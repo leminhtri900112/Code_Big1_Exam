@@ -7,6 +7,7 @@
   --secondary-color: #ffc600;
   --border-color-light: #eee;
   --heading-color: #232121;
+  --bg-grey: #f7f7f7;
 }
 * {
   margin: 0;
@@ -634,6 +635,115 @@ button.mfp-arrow {
   color: #fff;
 }
 /* end video */
+
+/* start blogs */
+.diner__blogs {
+  background: var(--bg-grey);
+}
+
+.diner__blogs .card {
+  position: relative;
+  word-wrap: break-word;
+  background-color: transparent;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0;
+}
+.diner__blogs .card-header {
+  border: none;
+}
+
+.radius-image {
+  border-radius: var(--border-radius);
+}
+
+.diner__blogs .post-pos {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.diner__blogs a.receipe {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 3px 20px;
+  border-radius: 35px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  letter-spacing: 0.05em;
+}
+
+.diner__blogs .meta-info {
+  opacity: 1;
+  color: #fff;
+  margin-left: 10px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.diner__blogs a.blog-desc {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+  font-family: "Segoe UI";
+}
+
+.diner__blogs .p-footer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diner__blogs .p-meta-info {
+  display: grid;
+  align-items: center;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  justify-content: flex-start;
+}
+
+.diner__blogs a.read {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--heading-color);
+  opacity: 0.9;
+}
+
+.diner__blogs a.read:hover {
+  color: var(--primary-color);
+}
+
+.diner__blogs .p-meta-info a {
+  font-weight: 700;
+  color: var(--heading-color);
+  letter-spacing: 0.02em;
+}
+
+.diner__blogs a.post-img-anchor {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.diner__blogs .p-meta-info img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+}
+/* end blogs */
 
 @keyframes ripple {
   0% {
