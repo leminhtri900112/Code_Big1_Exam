@@ -5,6 +5,8 @@
   --bg-light: rgba(130, 115, 252, 0.05);
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
+  --border-color-light: #eee;
+  --heading-color: #232121;
 }
 * {
   margin: 0;
@@ -242,7 +244,6 @@ button#trigger-overlay {
   height: 40%;
   content: " ";
   position: absolute;
-
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0,
@@ -291,3 +292,52 @@ button#trigger-overlay {
   letter-spacing: 1px;
 }
 /* end category */
+
+/* start service */
+.diner__service {
+  position: relative;
+}
+
+.service__item {
+  padding: 40px 40px;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+  background-color: var(--bg-color);
+  position: relative;
+  border: 1px solid var(--border-color-light);
+}
+
+.service__item:hover {
+  box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.service__item:hover .icon {
+  background-color: var(--primary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.service__item:hover .icon span.fa {
+  color: var(--bg-color);
+}
+
+.service__item-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 30px;
+}
+
+.service__item h4 a {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: var(--heading-color);
+  font-family: "Segoe UI";
+}
+
+.service__item h4 a:hover {
+  color: var(--primary-color);
+}
+/* end service */
