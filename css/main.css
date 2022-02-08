@@ -745,6 +745,81 @@ button.mfp-arrow {
 }
 /* end blogs */
 
+.diner__carousel a.comment__img {
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+} /* start carousel */
+
+.diner__carousel .testimonial img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.img__responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.diner__carousel blockquote q {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--heading-color);
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Segoe UI";
+  letter-spacing: 1px;
+}
+
+.diner__carousel blockquote q::before {
+  font-size: 50px;
+  color: var(--primary-color);
+  display: block;
+  /* font-family: initial; */
+  font-family: "Segoe UI";
+}
+
+.diner__carousel .testimonial .people__info h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.diner__carousel p.indentity {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 35px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: var(--primary-color);
+}
+
+.owl-theme .owl-dots .owl-dot {
+  outline: none;
+}
+
+.diner__carousel .testimonial {
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* end carousel  */
+
 @keyframes ripple {
   0% {
     box-shadow: 0 0 0 0 rgb(255 255 255 / 25%),
