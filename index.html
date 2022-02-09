@@ -45,7 +45,7 @@
 
     <title>Diner</title>
   </head>
-  <body>
+  <body class="data-theme">
     <div class="app">
       <div class="diner__banner">
         <div class="container">
@@ -62,9 +62,12 @@
                   />
                   <span class="fa fa-search search__icon"></span>
                 </form>
-                <div class="mode__toggle d-flex align-items-center mx-2">
-                  <i class="far fa-sun"></i>
-                  <!-- <i class="far fa-moon"></i> -->
+                <div
+                  onclick="switchMode()"
+                  class="mode__toggle d-flex align-items-center mx-2"
+                >
+                  <i class="far fa-moon"></i>
+                  <!-- <i class="far fa-sun"></i> -->
                 </div>
                 <button
                   class="navbar-toggler"
@@ -1024,5 +1027,8 @@
     <script src="./js/modernizr-2.6.2.min.js"></script>
     <script src="./js/classie.js"></script>
     <script src="./js/overplay.js"></script>
+
+    <!-- change theme -->
+    <script src="./js/theme-change.js"></script>
   </body>
 </html>
